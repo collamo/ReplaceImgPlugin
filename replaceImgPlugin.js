@@ -7,7 +7,7 @@
 
     var opts = $.extend({
       'restoreByResize': false,
-      'restoreWindowSize': 640
+      'restoreWindowWidth': 640
     }, options);
     var $targets = $(this);
     if($(this).prop("tagName") != "IMG"){
@@ -15,7 +15,7 @@
     }
 
     if(opts.restoreByResize){
-      detectWindowResize(opts.restoreWindowSize);
+      detectWindowResize(opts.restoreWindowWidth);
       $(window).bind('wschange', function(e,data){
         if(data.type=="l"){
           $.each($('.rpimg'), function(i, e){
