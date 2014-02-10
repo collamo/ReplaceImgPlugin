@@ -10,7 +10,7 @@
       'restoreWindowWidth': 640
     }, options);
     var $targets = $(this);
-    if($(this).prop("tagName") != "IMG"){
+    if($(this).get(0).tagName != "IMG"){
       $targets = $(this).find('img');
     }
 
