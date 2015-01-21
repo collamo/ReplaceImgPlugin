@@ -6,7 +6,7 @@
   $.fn.replaceImgToText = function(options){
 
     var opts = $.extend({
-      'restoreByResize': false,
+      'restoreByResize': true,
       'restoreWindowWidth': 640
     }, options);
     var $targets = $(this);
